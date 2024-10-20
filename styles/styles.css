@@ -1,0 +1,148 @@
+body {
+  font-family: "Press Start 2P", Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optionally apply the font to specific elements */
+.header,
+.add-product h2,
+.product-list h2,
+.footer {
+  font-family: "Press Start 2P", Arial, sans-serif;
+}
+
+.header {
+  background-color: #5e29a1;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Style for the product list */
+.product-list {
+  width: 60%;
+  order: 1; /* Default order for larger screens */
+}
+
+.product-list h2 {
+  font-size: 1.5em;
+}
+
+/* Style for the products container */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 2px solid #5e29a1;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  font-size: 0.6rem;
+}
+
+.no-products-message {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  background-color: #5e29a1;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.add-product {
+  width: 30%;
+  order: 2; /* Default order for larger screens */
+}
+
+.add-product h2 {
+  font-size: 1.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-btn,
+.reset-btn {
+  background-color: #5e29a1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #5e29a1;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .add-product {
+    width: 100%;
+    margin-bottom: 20px;
+    order: 1; /* Move the form to the top */
+  }
+
+  .product-list {
+    width: 100%;
+    order: 2; /* Move the product list below the form */
+  }
+
+  .products {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}

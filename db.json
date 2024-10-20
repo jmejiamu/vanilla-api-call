@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Stormtrooper",
+      "price": "60.00",
+      "image": "https://picsum.photos/200/200"
+    },
+    {
+      "id": 2,
+      "name": "Game Boy Classic",
+      "price": "60.00",
+      "image": "https://picsum.photos/200/200"
+    },
+    {
+      "id": "55e7",
+      "name": "swdsd",
+      "price": "34",
+      "image": "https://picsum.photos/200/200"
+    }
+  ]
+}

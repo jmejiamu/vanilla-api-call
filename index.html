@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>❤️❤️❤️ AluraGeek</h1>
+    </header>
+
+    <main class="main-content">
+      <div class="product-list">
+        <h2>MY PRODUCTS:</h2>
+        <div class="products-container">
+          <p class="no-products-message">No products available.</p>
+          <div class="products"></div>
+        </div>
+      </div>
+
+      <div class="add-product">
+        <h2>ADD PRODUCTS:</h2>
+        <form id="productForm">
+          <input type="text" placeholder="nombre..." id="name" required />
+          <input type="text" placeholder="precio..." id="price" required />
+          <input type="text" placeholder="imagen..." id="image" required />
+          <div class="form-buttons">
+            <button type="submit" class="submit-btn">Enviar</button>
+            <button type="reset" class="reset-btn">Limpiar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>❤️❤️❤️ AluraGeek</p>
+      <p>DESARROLLADO POR Jose H Mejia Munoz</p>
+      <p>ALURA LATAM - 2024</p>
+    </footer>
+
+    <script src="./script/index.js" defer></script>
+  </body>
+</html>
